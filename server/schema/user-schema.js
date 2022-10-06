@@ -11,11 +11,10 @@ mongoose.connect('mongodb://localhost/mongoose_basics', function (err) {
 } ); 
 */
 
-var userSchema = mongoose.Schema({
+const userSchema = mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
-    contactInfo: {
-        name: {
-            firstname: {
+    name: {                             //considering just having this be a simple String 
+            firstname: {                    
                 type: String,
                 required: true
             }, 
@@ -24,75 +23,13 @@ var userSchema = mongoose.Schema({
                 required: true
             }, 
         },
+    contactInfo: {    
         gtEmail: String,
-        personalEmail: String,
+        personalEmail: String,          //considering removing
         phoneNumber: String
     },
-    location: {
-        country: String,
-        city: {
-            type: String,
-            required: true
-        },
-        state: {
-            type: String,
-            required: true
-        }, 
-        postalCode: String
-    },
-    resume: Buffer,
-    jobPreferences: {
-        jobTitle: String,
-        jobTypes: {
-            fullTime: Boolean,
-            partTime: Boolean,
-            contract: Boolean,
-            temporary: Boolean,
-            internship: Boolean
-        },
-        workSchedule: {
-            dayRanges: {
-                mondayToFriday: Boolean,
-                weekendAvaliability: Boolean,
-                weekendsOnly: Boolean,
-                noWeekends: Boolean,
-                holidays: Boolean
-            },
-            dayRanges: {
-                fourHourShift: Boolean,
-                eightHourShift: Boolean,
-                tenHourShift: Boolean,
-                twelveHourShift: Boolean,
-                dayShift: Boolean,
-                nightShift: Boolean,
-                eveningShift: Boolean,
-                noNights: Boolean,
-                overnightShift: Boolean,
-                afterSchool: Boolean
-            },
-            other: {
-                threeTwelve: Boolean,
-                fourTen: Boolean,
-                fourTwelve: Boolean,
-                fiveEight: Boolean,
-                onCall: Boolean,
-                selfSchedule: Boolean,
-                overtime: Boolean
-            },
-        },
-        pay: {
-            minimumBasePay: Number,
-            payPeriod: String
-        },
-        relocation: Boolean        
-    },
-    readyToWork: Boolean,
-    remoteOptions: {
-        hybrid: Boolean,
-        inPerson: Boolean,
-        remote: Boolean,
-        tempRemote: Boolean
-    },
+    password: String,
+    resume: Buffer,                     //is this necessary with the gt idea?
     created: {
         type: Date,
         default: Date.now
