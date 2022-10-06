@@ -7,7 +7,17 @@ const applicationSchema = new Schema({
     organization: String,
     title: String,
     description: String,
-    applicantIds: [Number],
+    applicants: [               //not sure if this should be in its own table or not
+        {
+            applicantId: Number,
+            answers: [
+                {
+                    question: String,
+                    answerField: Mixed
+                }
+            ]
+        },
+    ],
     questions: [
         {
             question: String,
