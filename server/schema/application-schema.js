@@ -21,7 +21,7 @@ const applicationSchema = new Schema({
     questions: [
         {
             question: String,
-            answerField: Mixed
+            answerField: Mixed  //might switch this to "answerType: String"
         }
     ],
     datePosted: {

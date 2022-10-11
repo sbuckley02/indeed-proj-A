@@ -28,7 +28,7 @@ const userSchema = mongoose.Schema({
         personalEmail: String,          //considering removing
         phoneNumber: String
     },
-    password: String,
+    hashedPassword: Number,
     resume: Buffer,                     //is this necessary with the gt idea?
     created: {
         type: Date,
