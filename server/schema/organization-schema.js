@@ -11,3 +11,7 @@ const organizationSchema = mongoose.Schema({
     phoneNumber: String,            //can only see 2FA being the use of this
     applicationIds: [Number]
 });
+
+const organizationModel = mongoose.model("organization", organizationSchema)
+
+module.exports = organizationModel

@@ -29,3 +29,7 @@ const applicationSchema = new Schema({
         default: Date.now
     }
 })
+
+const applicationModel = mongoose.model("application", applicationSchema)
+
+module.exports = applicationModel
