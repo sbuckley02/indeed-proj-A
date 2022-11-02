@@ -21,7 +21,3 @@ app.get("/api/sample-req", (req, res) => {
 	res.send('hehe');
 });
 
-// Start the server
-app.listen(PORT, () => {
-	console.log(`Server listening on port ${PORT}`)
-});
