@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 const { userModel } = require("../schema/user-schema")
 
-function setupUserEndpoints(app) {
+export function setupUserEndpoints(app) {
     app.get("/api/users", async(req, res) => {
         const allUsers = await userModel.find()
 

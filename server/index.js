@@ -1,3 +1,7 @@
+import { setupApplicationEndpoints } from './endpoints/application-endpoints';
+import { setupOrganizationEndpoints } from './endpoints/organization-endpoints';
+import { setupUserEndpoints } from './endpoints/user-endpoints';
+
 /**
  * This file is the entrance for the back-end application. When you run "npm start",
  * you are actually just running this file. It creates the server which listens on port

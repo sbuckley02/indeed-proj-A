@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 const { applicationModel } = require("../schema/application-schema")
 
-function setupApplicationEndpoints(app) {
+export function setupApplicationEndpoints(app) {
     app.get("/api/applications", async(req, res) => {
         const allUsers = await applicationModel.find()
 

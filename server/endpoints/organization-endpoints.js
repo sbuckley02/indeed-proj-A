@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 
 const { organizationModel } = require("../schema/organization-schema")
 
-function setupOrganizationEndpoints(app) {
+export function setupOrganizationEndpoints(app) {
     app.get("/api/organizations", async(req, res) => {
         const allUsers = await organizationModel.find()
     })
