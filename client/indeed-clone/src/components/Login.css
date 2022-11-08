@@ -1,0 +1,82 @@
+#Login {
+    margin: 5px;
+    padding-bottom: 30px;
+  }
+  
+  #ErrorMessage {
+    font-size: 15px;
+    color: #FF0000;
+    margin: 5px;
+  }
+  
+  #Blank {
+    font-size: 15px;
+    color: #F4E1A8;
+    margin: 5px;
+  }
+  
+  #Username {
+    font-size: 20px;
+    margin: 5px;
+  }
+  
+  #UsernameTextBox {
+    background-color: #FFFFFF;
+    height: 27px;
+    width: 350px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  
+  #Password {
+    font-size: 20px;
+    margin: 5px;
+  }
+  
+  #PasswordTextBox {
+    background-color: #FFFFFF;
+    height: 27px;
+    width: 350px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  
+  #LoginButton {
+    background-color: #204C9C;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 140px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  
+  #LoginButton:hover {
+    background-color: #204484;
+  }
+  
+  #SignUp {
+    font-size: 17px;
+    margin: 0px;
+  }
+  
+  #SignUpLink{
+    font-size: 17px;
+  }
+  
+  .Login {
+    text-align: center;
+    background-color: #F4E1A8;
+  }
+  
+  .Login-header {
+    background-color: #F4E1A8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #000000;
+  }

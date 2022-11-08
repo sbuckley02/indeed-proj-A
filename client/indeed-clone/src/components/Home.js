@@ -1,6 +1,9 @@
 // Imports
 import axios from 'axios';
 import {useState, useEffect} from 'react';
+import './Home.css';
+import SearchBar from './SearchBar';
+
 
 // A sample component arbitrarily called "Home"
 function Home() {
@@ -22,14 +25,22 @@ function Home() {
 	// Return the HTML that will display for this component, including an
 	// embedded variable
 	return (
-		<div>
-			<h2>Indeed Clone</h2>
-			<p>This text can be found in the nested component "Home". You're gonna want to change this text when you're able to</p>
-			<p>Here's something cool - the following text is retreived from the back-end:</p>
-			<code>{sampleBackendText}</code>
-			<p>If you see <code>null</code> above, it means it didn't work. That likely means that you don't have the
-				back-end running on a separate port on your computer. If you see something else (no spoilers), it's working</p>
+		<div className="background">
+			<div className='buttons'>
+			<button className="login">Login</button>
+			<button className="signUp">Sign Up</button>
+			</div>
+			<div className='search'>
+			<SearchBar/>
+			</div>
+			<div className='slides'>
+			<button className='Cultural'>Cultural</button>
+			<button className='Professional'>Professional</button>
+			<button className='Social'>Social</button>
+			</div>
 		</div>
+			
+
 	)
 }
 

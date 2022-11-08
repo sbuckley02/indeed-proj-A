@@ -1,0 +1,113 @@
+.app {
+    text-align: center;
+    background-color: #F4E1A8;
+  }
+  
+  .signup {
+    background-color: #F4E1A8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: #000000;
+  }
+  
+  
+  #firstName, #lastName {
+    font-size: 20px;
+    margin: 8px;
+  }
+  
+  #email {
+    font-size: 20px;
+    margin: 30px;
+  }
+  
+  #password {
+    font-size: 20px;
+    margin: 15px;
+  }
+  
+  #occupation {
+    font-size: 20px;
+    margin: 37px;
+  }
+  
+  #firstNameBox, #lastNameBox, #passwordBox {
+    background-color: #FFFFFF;
+    height: 27px;
+    width: 350px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  
+  #emailBox {
+    background-color: #FFFFFF;
+    height: 27px;
+    width: 350px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  
+  #occupationBox {
+    background-color: #FFFFFF;
+    height: 25px;
+    width: 350px;
+    font-size: 18px;
+    border-radius: 10px;
+  }
+  
+  #signUpButton{
+    background-color: #204C9C;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    width: 140px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-size: 35px;
+  }
+  
+  .notError {
+    color: #F4E1A8;
+    font-size: 15px;
+  }
+  
+  .error {
+    color:red;
+    font-size: 15px;
+  }
+  
+  .loginLink{
+    font-size: 17px;
+    color:blue;
+  }
+  
+  
+  #login {
+    font-size: 17px;
+    margin: 0px;
+    padding-top:10px;
+  }
+  
+  #loginLink{
+    font-size: 17px;
+  }
+  
+  #ErrorMessage {
+    font-size: 15px;
+    color: #FF0000;
+    margin: 5px;
+  }
+  
+  #Blank {
+    font-size: 15px;
+    color: #F4E1A8;
+    margin: 5px;
+  }
