@@ -1,0 +1,32 @@
+.background {
+    background-image: 
+    url("./back.png");
+    width: 100%;
+    height: 80%;
+    min-width: 600px;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    object-fit: cover;
+}
+
+.buttons {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+.search {
+
+    position: 'absolute';
+    bottom:1000px;
+}
+
+.slides{
+    flex: 1;
+    justify-content: 'flex-end';
+    margin-bottom: 36;
+
+
+}
